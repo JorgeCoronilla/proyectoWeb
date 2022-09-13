@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#homeBackground {
+   
+    background-image: url(../images/portada_helping_Jorge.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    color: white;
+}
+
+h2, h3, p {
+    font-family: 'Arvo', serif;
+    color: white;
+    margin: 5%;
+}
+
+
+a {
+    color:bisque;
+}
+
+footer {
+    background-color:darkolivegreen;
+    text-align: center;
+    padding-top: 10px;
+
+    box-shadow: 0 50vh 0 50vh darkolivegreen;
+}
+
+.home {
+     height: 800px; 
+}
+
+.home2 {
+    height: 700px;
+    background-color: antiquewhite;
+}
+
+#homeTitle {
+    
+    font-size: 4em;
+    color:rgb(255, 255, 255);
+    min-height: 100px;
+    margin: 0 30px 0 30px;
+}
+
+
+#titleBack {
+    background-color: rgb(255, 255, 255, 0.4);
+    width:fit-content;
+    margin-left: 5%;
+    position: relative;
+    top: 300px;
+}
+
+nav {
+    position:fixed;
+    top: 5%;
+    right: 5%;
+    text-align: right;
+    font-size: 1.3em;
+    
+}
+
+header {
+    position:relative;
+    top: 100px;
+    left: 5%;
+    font-size: 1.5em;
+    
+}
+
+.navLink {
+    margin: 0 10px;
+}
+
+
+#section1{
+
+    background-image: url(../images/above-1057406_1920.jpg);
+    
+}
+
+#section2 {
+
+}
+
+#section3 {
+
+}
