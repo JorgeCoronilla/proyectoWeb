@@ -1,37 +1,65 @@
-* {
+*{
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
+    /*border: red 1px solid;*/
+}
+
+body {
+    background-color: darkolivegreen;
+    position: relative;
+    bottom: 100px;
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    color: rgb(184, 58, 58);
+    padding-bottom: 50px;
+    margin: 5%;
+}
+
+h2, h3, p, .form-text {
+    font-family: 'Arvo', serif;
+    color: rgb(196, 88, 88);
+    margin: 5%;
+}
+
+a {
+    color:bisque;
 }
 
 #homeBackground {
    
     background-image: url(../images/portada_helping_Jorge.jpeg);
     background-size: cover;
-    background-repeat: no-repeat;  
+
 }
 
-h1 {
-    font-family: 'Dosis', sans-serif;
-    color: white;
+nav {
+    position:fixed;
+    top: 5%;
+    right: 5%;
+    text-align: right;
+    font-size: 1.3em;
+    
 }
 
-h2, h3, p {
-    font-family: 'Arvo', serif;
-    color: white;
-    margin: 5%;
+.navLink {
+    margin: 0 10px;
 }
 
-
-a {
-    color:bisque;
+header {
+    position:relative;
+    top: 100px;
+    font-size: 1.5em;
 }
+
 
 footer {
     background-color:darkolivegreen;
     text-align: center;
     padding-top: 10px;
-
-    box-shadow: 0 50vh 0 50vh darkolivegreen;
+    /*box-shadow: 0 50vh 0 50vh darkolivegreen;*/
 }
 
 .home {
@@ -39,8 +67,7 @@ footer {
 }
 
 .home2 {
-    height: 700px;
-    background-color: antiquewhite;
+    
 }
 
 #homeTitle {
@@ -60,38 +87,84 @@ footer {
     top: 300px;
 }
 
-nav {
-    position:fixed;
-    top: 5%;
-    right: 5%;
-    text-align: right;
-    font-size: 1.3em;
-    
-}
 
-header {
-    position:relative;
-    top: 100px;
-    left: 5%;
-    font-size: 1.5em;
-    
-}
 
-.navLink {
-    margin: 0 10px;
+.home3 {
+   
 }
 
 
 #section1{
+    background-image: url(../images/above-1057406_1920.jpg);    
+}
 
-    background-image: url(../images/above-1057406_1920.jpg);
+
+
+#form {
+    margin: 100px 5% 50px 5%;
+}
+
+.form-container {
+    background-color: azure;
+    padding: 5% 5% 5px 5%;
+    width: fit-content;
+}
+
+.inline-form {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  input[type=text] {
+    font-family: 'Arvo', serif;
+    color: rgb(196, 88, 88);
+    border: solid 1px rgb(196, 88, 88);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 5% 5px 5%;
     
+  }
+  textarea {
+    font-family: 'Arvo', serif;
+    color: rgb(196, 88, 88);
+    border: solid 1px rgb(196, 88, 88);
+    border-radius: 5px;
+    margin: 10px 2.5% 5px 2.5%;
+    padding: 5px;
+  }
+
+.form-textarea {
+    margin:0;
+    color: rgb(196, 88, 88);
+    font-family: 'Arvo', serif;
+    margin: 10px 2.5% 5px 2.5%;
 }
 
-#section2 {
-
+input[type=button] {
+    font-family: 'Arvo', serif;
+    color: rgb(196, 88, 88);
+    border: solid 1px rgb(196, 88, 88);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 2.5% 50px 2.5%;
+    background-color: rgb(196, 88, 88);
+    color:white;
 }
 
-#section3 {
+.home-hobbies-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    background-color: antiquewhite;
+}
 
+.hobbies-columns {
+    border: solid 4px brown;
+    color: brown;
+    height: 300px;
+    margin: 10% 5px;
+    float: left;
+    width: 250px;
 }
