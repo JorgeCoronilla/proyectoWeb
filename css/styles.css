@@ -28,9 +28,19 @@ a {
     color:bisque;
 }
 
+a:hover {
+    color:rgb(255, 247, 236);
+}
 #homeBackground {
    
     background-image: url(../images/portada_helping_Jorge.jpeg);
+    background-size: cover;
+
+}
+
+#contactBackground {
+   
+    background-image: url(../images/castañar-eltiemblo.jpg);
     background-size: cover;
 
 }
@@ -98,14 +108,17 @@ footer {
     background-image: url(../images/above-1057406_1920.jpg);    
 }
 
-
+#section2{
+    background-image: url(../images/above-1057406_1920.jpg);    
+}
 
 #form {
     margin: 100px 5% 50px 5%;
+    height: 600px;
 }
 
 .form-container {
-    background-color: azure;
+    background-color: rgb(255, 255, 255, 0.6);
     padding: 5% 5% 5px 5%;
     width: fit-content;
 }
@@ -122,8 +135,12 @@ footer {
     border-radius: 5px;
     padding: 5px;
     margin: 10px 5% 5px 5%;
-    
   }
+
+  input[type=text]:focus{
+    background-color: lightgray;
+  }
+  
   textarea {
     font-family: 'Arvo', serif;
     color: rgb(196, 88, 88);
@@ -155,16 +172,31 @@ input[type=button] {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: rgb(223, 209, 190);
 }
 
 .hobbies-columns {
-    border: solid 4px brown;
+    /*border: solid 4px brown;*/
     color: brown;
-    height: 300px;
-    margin: 10% 5px;
-    float: left;
+    margin: 30px 20px 30px 20px;
+    padding: 30px;
     width: 250px;
+    background-color: rgb(207, 189, 164);
+}
+
+.hobbies-image {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 5%;
+
+}
+
+.hobbies-columns:hover {
+    background-color: rgb(245, 226, 199);
+    position:relative;
+    left:15px;
+    top: 15px;
+    /*box-shadow: -15px -15px black;*/
 }
