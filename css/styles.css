@@ -26,15 +26,18 @@ h2, h3, p, .form-text {
     margin: 5%;
 }
 
-
+.spacer {
+    height: 150px;
+}
 /* nav-bar */
 a {
     color:#F5EDDC;
-    transition-timing-function: linear;
+    transition: 0.5s linear;
 }
 
 a:hover {
-    color:#FA9494;
+    color:#ff5656;
+    font-size: 1.1em;
 }
 
 nav {
@@ -42,7 +45,7 @@ nav {
     top: 5%;
     right: 5%;
     text-align: right;
-    font-size: 1.3em;
+
     
 }
 
@@ -72,7 +75,7 @@ footer p {
 
 header.header-home {
     position:relative;
-    top: 100px;
+    top: 300px;
     font-size: 1.5em;
 }
 
@@ -87,17 +90,18 @@ header.header-home {
 #titleBack {
    background-color: rgba(95, 80, 80, 0.4);
    width:fit-content;
-   margin-left: 5%;
+   margin-left: 15%;
    position: relative;
-   top: 300px;
+   top: 500px;
 }
 
 .home {
-    height: 800px; 
+    height: 800px;
 }
 
 #homeBackground {
-   
+    position:relative;
+    top: 100px;
     background-image: url(../images/portada_helping_Jorge.jpeg);
     background-size: cover;
 }
@@ -105,6 +109,8 @@ header.header-home {
 
 
 .home-hobbies-container{
+    position: relative;
+    top: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -136,27 +142,28 @@ header.header-home {
     /*box-shadow: -15px -15px black;*/
 }
 
+.home-footer {
+    position:relative;
+    top: 100px;
+}
 /*contact*/
 
 #contactBackground {
    
     /*background-image: url(../images/castañar-eltiemblo.jpg);*/
-    background-color: #75e4e4;
+    background-image: url("../images/castañar-eltiemblo.jpg");
     background-size: cover;
-
+    position: relative;
+    bottom: 250px;
+    width: 100%;
 }
 
-
 #form {
-    margin: 100px 5% 50px 5%;
+    padding: 0 5% 50px 5%;
     height: 600px;
 }
 
-.form-container {
-    background-color: rgb(255, 255, 255, 0.8);
-    padding: 5% 5% 5px 5%;
-    width: fit-content;
-}
+
 
 .inline-form {
     display: flex;
@@ -170,10 +177,11 @@ header.header-home {
     border-radius: 5px;
     padding: 5px;
     margin: 10px 5% 5px 5%;
+    transition: 0.5s lineal;
   }
 
-  input[type=text]:focus{
-    background-color: lightgray;
+  input[type=text]:focus {
+    background-color: rgb(255, 228, 228);
   }
 
   textarea {
@@ -183,8 +191,12 @@ header.header-home {
     border-radius: 5px;
     margin: 10px 2.5% 5px 2.5%;
     padding: 5px;
+    transition: 0.5s lineal;
   }
 
+  textarea:focus {
+    background-color: rgb(255, 228, 228);
+  }
 .form-textarea {
     margin:0;
     color:#fa5454;
@@ -203,7 +215,51 @@ input[type=button] {
     color:white;
 }
 
+input[type=button]:hover {
+    background-color: #d44545;
+}
 
+/*
+#contact-image {
+    width: 400px;
+    height: 300px;
+    background-image: url("../images/imagen-contacto.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+.form-container {
+    background-color: rgb(255, 255, 255, 0.8);
+    padding: 5% 5% 5px 5%;
+    width: fit-content;
+    border-radius: 20px;
+}
+*/
+.contact-flex {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 350px;
+
+}
+
+#contact-image {
+    width: 500px;
+    background-image: url("../images/imagen-contacto.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.form-container {
+    background-color: rgb(255, 255, 255, 0.8);
+    padding: 5% 2% 5px 2%;
+    border-radius: 20px;
+    width: fit-content;
+}
 
 /*Biografia*/
 #biografia-header{
@@ -218,6 +274,13 @@ input[type=button] {
     background-color: rgb(227, 234, 241);
     
 }
+
+.biografia-text-container2 {
+    position: relative;
+    bottom: 250px;
+    background-color: rgb(227, 234, 241);   
+}
+
 p.biografia-text {
     color: rgb(87, 87, 87);
     padding: 0 15% 0 15%;
@@ -251,8 +314,8 @@ h3.biografia-text {
 
 #biografia-image1 {
     position: relative;
-    bottom: 200px;
-    width: 100%;
+    width:100%;
+    top: 150px;
 }
 
 /*Portfolio*/
@@ -261,6 +324,12 @@ h3.biografia-text {
     background-image: url(../images/Lanzarote-Timamfaya-road_2.jpg);
     background-size: cover;
     height: 650px;
+}
+
+figcaption {
+    position: relative;
+    bottom: 140px;
+    text-align: right;
 }
 
 #portfolio-container {
@@ -284,10 +353,6 @@ h3.biografia-text {
     border-radius: 15px;
     margin: 30px 30px 30px 30px;
     text-align: center;
-    background-image: url("../images/bicycle.png");
-    background-size: 150px;
-    background-repeat: no-repeat;
-    background-position: center;
     transition: 0.5s linear;
 }
 
@@ -311,3 +376,69 @@ p.tile-text:hover {
     color: rgb(31, 27, 27);
 
 }
+
+.tile1 {
+    background-image: url("../images/logo-complutense.png");
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s linear;
+}
+
+.tile1:hover {
+    background-image: none;}
+
+.tile2 {
+    background-image: url("../images/Logo-Grecia.png");
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s linear;
+}
+    
+.tile2:hover {
+    background-image: none;}
+
+.tile3 {
+    background-image: url("../images/Scotland-kit-logo.jpg");
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s linear;
+    }
+        
+.tile3:hover {
+    background-image: none;}
+
+.tile4 {
+    background-image: url("../images/Logotipo_del_Instituto_Cervantes.svg.png");
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s linear;
+}
+        
+.tile4:hover {
+    background-image: none;}
+
+.tile5 {
+    background-image: url("../images/logotipo\ SALT.png");
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s linear;
+}
+                
+.tile5:hover {
+    background-image: none;}
+
+.tile6 {
+    background-image: url("../images/logo-university-edinburgh.png");
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s linear;
+}
+                    
+.tile6:hover {
+    background-image: none;}

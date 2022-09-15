@@ -12,33 +12,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Dosis:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section  id="contactBackground">
+    <div  id="contactBackground">
         <header>
-            <h1>Contacto</h1>
+            <nav>
+                <a class="navLink" href="index.html">Home</a>
+                <a class="navLink" href="biografia.html">biografía</a>
+                <a class="navLink" href="portfolio.html">portfolio</a>   
+            </nav>
         </header>
-        <nav>
-            <a class="navLink" href="index.html">Home</a>
-            <a class="navLink" href="biografia.html">biografía</a>
-            <a class="navLink" href="portfolio.html">portfolio</a>   
-        </nav>
+            <div class="spacer"><p>·</p></div>
             <section id="form">
-                <div class="form-container">
-                    <h3>Formulario</h3>
-                    <form>
-                        <div class="inline-form">
-                            <label for="nombre"><span class= "form-text">Nombre:</span><input type="text" id="nombre" value="TuNombre"></label>
-                            <label for="email"><span class= "form-text">Email:</span><input type="text" id="email" value="Tuemail"></label>
-                        </div>
-                        <div>
-                            <label for="mensaje"><span class= "form-textarea">Mensaje:</span><textarea cols="52" rows="5" maxlength="500">Hola</textarea></label> 
-                        </div>
-                        <div>
-                            <input type="button" value="Submit">
-                        </div>
-                    </form>
+                <div class="contact-flex">
+                    <div class="form-container">
+                        <h3>Contacta conmigo!</h3>
+                        <br>
+                        <form>
+                            <div class="inline-form">
+                                <label for="nombre"><span class= "form-text">Nombre:</span><input type="text" id="nombre" value="TuNombre"></label>
+                                <label for="email"><span class= "form-text">Email:</span><input type="text" id="email" value="Tuemail"></label>
+                            </div>
+                            <div>
+                                <label for="mensaje"><span class= "form-textarea">Mensaje:</span><textarea cols="52" rows="5" maxlength="500">Hola</textarea></label> 
+                            </div>
+                            <div>
+                                <input type="button" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                    <div id="contact-image"><h3>A qué esperas</h3></div>
                 </div>
             </section>
-    </section>
+        
+            
     <footer>
         <p>Todos los derechos reservados 2022</p>
     </footer>
