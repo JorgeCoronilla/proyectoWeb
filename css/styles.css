@@ -55,11 +55,14 @@ footer {
     background-color:#FA9494;
     text-align: center;
     padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 footer p {
     color:white;
     font-size: larger;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 
@@ -90,7 +93,7 @@ header.header-home {
 #homeBackground {
     background-image: url(../images/portada_helping_Jorge.jpeg);
     background-size: cover;
-    height: 700px;
+    height: 800px;
 }
 
 
