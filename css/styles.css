@@ -4,13 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-    border: 0px rgba(238, 14, 14) solid;
+    border: px rgba(238, 14, 14) solid;
 }
 
 body {
     background-color: #FA9494;
-    position: relative;
-    bottom: 100px;
 }
 
 h1 {
@@ -23,19 +21,20 @@ h1 {
 h2, h3, p, .form-text {
     font-family: 'Arvo', serif;
     color:  #fa5454;
-    margin: 5%;
+    margin-left: 5%;
+    margin-top: 0;
+    padding-top: 0;
 }
 
-.spacer {
-    height: 150px;
-}
 /* nav-bar */
-a {
+nav a {
     color:#F5EDDC;
     transition: 0.5s linear;
+    padding: 0 10px;
+    font-size: 1.2em;
 }
 
-a:hover {
+nav a:hover {
     color:#ff5656;
     font-size: 1.1em;
 }
@@ -49,12 +48,6 @@ nav {
     
 }
 
-.navLink {
-    margin: 0 10px;
-}
-
-
-
 /* Footer */
 
 
@@ -62,7 +55,6 @@ footer {
     background-color:#FA9494;
     text-align: center;
     padding-top: 10px;
-    /*box-shadow: 0 50vh 0 50vh darkolivegreen;*/
 }
 
 footer p {
@@ -95,22 +87,15 @@ header.header-home {
    top: 500px;
 }
 
-.home {
-    height: 800px;
-}
-
 #homeBackground {
-    position:relative;
-    top: 100px;
     background-image: url(../images/portada_helping_Jorge.jpeg);
     background-size: cover;
+    height: 700px;
 }
 
 
 
 .home-hobbies-container{
-    position: relative;
-    top: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -120,7 +105,6 @@ header.header-home {
 }
 
 .hobbies-columns {
-    /*border: solid 4px brown;*/
     margin: 30px 20px 30px 20px;
     padding: 30px;
     width: 250px;
@@ -139,31 +123,20 @@ header.header-home {
     position:relative;
     left:15px;
     top: 15px;
-    /*box-shadow: -15px -15px black;*/
 }
 
-.home-footer {
-    position:relative;
-    top: 100px;
-}
 /*contact*/
 
 #contactBackground {
-   
-    /*background-image: url(../images/castañar-eltiemblo.jpg);*/
     background-image: url("../images/castañar-eltiemblo.jpg");
     background-size: cover;
-    position: relative;
-    bottom: 250px;
     width: 100%;
 }
 
 #form {
     padding: 0 5% 50px 5%;
-    height: 600px;
+    height: 800px;
 }
-
-
 
 .inline-form {
     display: flex;
@@ -197,6 +170,7 @@ header.header-home {
   textarea:focus {
     background-color: rgb(255, 228, 228);
   }
+
 .form-textarea {
     margin:0;
     color:#fa5454;
@@ -219,29 +193,15 @@ input[type=button]:hover {
     background-color: #d44545;
 }
 
-/*
-#contact-image {
-    width: 400px;
-    height: 300px;
-    background-image: url("../images/imagen-contacto.jpg");
-    background-repeat: no-repeat;
-    background-size:100%;
-}
-
-.form-container {
-    background-color: rgb(255, 255, 255, 0.8);
-    padding: 5% 5% 5px 5%;
-    width: fit-content;
-    border-radius: 20px;
-}
-*/
 .contact-flex {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin-top: 350px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 800px;
 
 }
 
@@ -262,46 +222,51 @@ input[type=button]:hover {
 }
 
 /*Biografia*/
-#biografia-header{
+#biografia-background{
+    position: relative;
+    bottom: 100px;
     background-image: url(../images/Lanzarote-Timamfaya-road_2.jpg);
     background-size: cover;
-    height: 650px;
+    height: 750px;
+}
+
+#header-biografia {
+    height: 600px;
 }
 
 .biografia-text-container {
     position: relative;
-    bottom: 100px;
-    background-color: rgb(227, 234, 241);
-    
+    bottom:120px;
+    background-color: rgb(227, 234, 241);    
 }
 
 .biografia-text-container2 {
     position: relative;
-    bottom: 250px;
+    bottom: 165px;
     background-color: rgb(227, 234, 241);   
 }
 
-p.biografia-text {
+
+article p {
     color: rgb(87, 87, 87);
     padding: 0 15% 0 15%;
+    margin: 20px auto 20px;
 }
 
-p.biografia-text:last-child {
-   padding-bottom: 100px;
+article p:last-child {
+   padding-bottom: 50px;
 }
 
-h3.biografia-text {
+article h3 {
     color: rgb(87, 87, 87);
-}
-
-.article1 {
+    padding: 20 15% 0 15%;
+    margin: 20px auto 20px;
     padding: 100px 15% 0 15%;
 }
 
-.article2 {
-    padding: 0 15% 0 15%;
+tr h3 {
+    padding-top:0;
 }
-
 #biografia-title {
  position: relative;
  top:470px;
@@ -314,8 +279,8 @@ h3.biografia-text {
 
 #biografia-image1 {
     position: relative;
-    width:100%;
-    top: 150px;
+    bottom: 140px;
+    width: 100%;
 }
 
 /*Portfolio*/
@@ -323,29 +288,32 @@ h3.biografia-text {
 #portfolio-header {
     background-image: url(../images/Lanzarote-Timamfaya-road_2.jpg);
     background-size: cover;
-    height: 650px;
-}
-
-figcaption {
+    height: 750px;
     position: relative;
-    bottom: 140px;
-    text-align: right;
+    bottom:100px;
 }
 
-#portfolio-container {
-
+#portfolio-footer {
+position: relative;
+top: 800px;
+padding-bottom: 50px;
 }
 
 #portfolio-tile-container {
+    position: relative;
+    top: 500px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:center;
     width: 100%;
     background-color: #F5EDDC;
+    padding-bottom: 100px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
-#portfolio-tile {
+.portfolio-tile {
     height: 200px;
     width: 200px;
     border: 5px solid black;
