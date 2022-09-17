@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-    border: px rgba(238, 14, 14) solid;
+    border: 0px rgba(238, 14, 14) solid;
 }
 
 body {
@@ -240,19 +240,19 @@ input[type=button]:hover {
 .biografia-text-container {
     position: relative;
     bottom:120px;
-    background-color: rgb(227, 234, 241);    
+    background-color: #F5EDDC;    
 }
 
 .biografia-text-container2 {
     position: relative;
     bottom: 165px;
-    background-color: rgb(227, 234, 241);   
+    background-color: #F5EDDC;   
 }
 
 
 article p {
     color: rgb(87, 87, 87);
-    padding: 0 15% 0 15%;
+    padding: 0 20% 0 20%;
     margin: 20px auto 20px;
 }
 
@@ -261,15 +261,13 @@ article p:last-child {
 }
 
 article h3 {
-    color: rgb(87, 87, 87);
-    padding: 20 15% 0 15%;
+    color: #fa5454;
+    padding: 10px 20% 0 30%;
     margin: 20px auto 20px;
-    padding: 100px 15% 0 15%;
+    padding: 100px 20% 0 20%;
+
 }
 
-tr h3 {
-    padding-top:0;
-}
 #biografia-title {
  position: relative;
  top:470px;
@@ -289,9 +287,9 @@ tr h3 {
 /*Portfolio*/
 
 #portfolio-header {
-    background-image: url(../images/Lanzarote-Timamfaya-road_2.jpg);
+    background-image: url(../images/IMG_20220714_183313.jpg);
     background-size: cover;
-    height: 750px;
+    height: 850px;
     position: relative;
     bottom:100px;
 }
@@ -304,7 +302,7 @@ padding-bottom: 50px;
 
 #portfolio-tile-container {
     position: relative;
-    top: 500px;
+    top: 600px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
