@@ -317,7 +317,7 @@ padding-bottom: 50px;
 .portfolio-tile {
     height: 200px;
     width: 200px;
-    border: 5px solid black;
+    border: 5px solid rgb(2, 2, 2);
     background-color: #fa5454;
     border-radius: 15px;
     margin: 30px 30px 30px 30px;
@@ -325,7 +325,7 @@ padding-bottom: 50px;
     transition: 0.5s linear;
 }
 
-#portfolio-tile:hover{
+.portfolio-tile:hover {
     background-color: #ff9999;
     height: 210px;
     width: 210px;
@@ -334,7 +334,7 @@ padding-bottom: 50px;
 }
 
 p.tile-text {
-    color: rgb(255, 255, 255,0);
+    color: rgba(26, 23, 23, 0);
     transition: 0.5s linear;
     height: 100%;
     margin: 0;
@@ -342,7 +342,7 @@ p.tile-text {
 }
 
 p.tile-text:hover {
-    color: rgb(31, 27, 27);
+    color: rgb(119, 101, 101);
 
 }
 
