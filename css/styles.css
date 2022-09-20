@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-    border: 0px rgba(238, 14, 14) solid;
+    border: red 1px solid;
 }
 
 body {
@@ -24,14 +24,30 @@ h2, h3, p, .form-text {
     margin-left: 5%;
     margin-top: 0;
     padding-top: 0;
+    line-height: 1.2;
 }
+
+p > a {
+    color: rgb(255, 107, 107);
+    font-weight: bold;
+   }
+
+mark {
+    background-color: #ff9090;
+}
+
+strong {
+    color: #e42e2e;
+}
+
 
 /* nav-bar */
 nav a {
     color:#F5EDDC;
     transition: 0.5s linear;
-    padding: 0 10px;
+    padding: 5px 10px 5px;
     font-size: 1.2em;
+    background-color: rgb(0, 0, 0, 0.2);
 }
 
 nav a:hover {
@@ -47,6 +63,7 @@ nav {
 
     
 }
+
 
 /* Footer */
 
@@ -274,8 +291,11 @@ article h3 {
  color: white;
  font-weight: lighter;
  font-size: 35px;
- padding-left: 15%;
- padding-top: 5%;
+ margin-left: 15%;
+ margin-top: 5%;
+ width:fit-content;
+ border: solid white 2px;
+ padding: 10px;
 }
 
 #biografia-image1 {
