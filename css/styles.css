@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,24 +12,27 @@ body {
 
 h1 {
     font-family: 'Dosis', sans-serif;
-    color:  rgb(250, 73, 73);
+    color: rgb(250, 73, 73);
     padding-bottom: 50px;
     margin: 5%;
 }
 
-h2, h3, p, .form-text {
+h2,
+h3,
+p,
+.form-text {
     font-family: 'Arvo', serif;
-    color:  #fa5454;
+    color: #fa5454;
     margin-left: 5%;
     margin-top: 0;
     padding-top: 0;
     line-height: 1.2;
 }
 
-p > a {
+p>a {
     color: rgb(255, 107, 107);
     font-weight: bold;
-   }
+}
 
 mark {
     background-color: #ff9090;
@@ -42,43 +45,40 @@ strong {
 
 /* nav-bar */
 nav a {
-    color:#fcdc97;
+    color: #fcdc97;
     transition: 0.3s linear;
     padding: 5px 10px 5px;
     font-size: 1.2em;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 nav a:hover {
-    color:#ffffff;
+    color: #ffffff;
     font-size: 1.1em;
-    /*text-decoration: underline;*/
     border: solid white 2px;
 }
 
 nav {
-    position:fixed;
+    position: fixed;
     top: 5%;
     right: 5%;
     text-align: right;
-    /*background-color: rgb(0, 0, 0, 0.4);*/
     padding: 5px 10px 5px;
-    
+
 }
 
 
 /* Footer */
 
-
 footer {
-    background-color:#FA9494;
+    background-color: #FA9494;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 20px;
 }
 
 footer p {
-    color:white;
+    color: white;
     font-size: larger;
     margin-bottom: 40px;
     margin-top: 40px;
@@ -88,25 +88,25 @@ footer p {
 /*Home styles*/
 
 header.header-home {
-    position:relative;
+    position: relative;
     top: 300px;
     font-size: 1.5em;
 }
 
 #homeTitle {
-   
-   font-size: 4em;
-   color: #FA9494;
-   min-height: 100px;
-   margin: 0 30px 0 30px;
+
+    font-size: 4em;
+    color: #FA9494;
+    min-height: 100px;
+    margin: 0 30px 0 30px;
 }
 
 #titleBack {
-   background-color: rgba(95, 80, 80, 0.4);
-   width:fit-content;
-   margin-left: 15%;
-   position: relative;
-   top: 500px;
+    background-color: rgba(95, 80, 80, 0.4);
+    width: fit-content;
+    margin-left: 15%;
+    position: relative;
+    top: 500px;
 }
 
 #homeBackground {
@@ -115,9 +115,7 @@ header.header-home {
     height: 800px;
 }
 
-
-
-.home-hobbies-container{
+.home-hobbies-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -142,8 +140,8 @@ header.header-home {
 
 .hobbies-columns:hover {
     background-color: #e4dfd4;
-    position:relative;
-    left:15px;
+    position: relative;
+    left: 15px;
     top: 15px;
 }
 
@@ -163,9 +161,9 @@ header.header-home {
 .inline-form {
     display: flex;
     flex-flow: row wrap;
-  }
+}
 
-  input[type=text] {
+input[type=text] {
     font-family: 'Arvo', serif;
     color: #fa5454;
     border: solid 1px #fa5454;
@@ -173,13 +171,13 @@ header.header-home {
     padding: 5px;
     margin: 10px 5% 5px 5%;
     transition: 0.5s lineal;
-  }
+}
 
-  input[type=text]:focus {
+input[type=text]:focus {
     background-color: rgb(255, 228, 228);
-  }
+}
 
-  textarea {
+textarea {
     font-family: 'Arvo', serif;
     color: #fa5454;
     border: solid 1px #fa5454;
@@ -187,15 +185,15 @@ header.header-home {
     margin: 10px 2.5% 5px 2.5%;
     padding: 5px;
     transition: 0.5s lineal;
-  }
+}
 
-  textarea:focus {
+textarea:focus {
     background-color: rgb(255, 228, 228);
-  }
+}
 
 .form-textarea {
-    margin:0;
-    color:#fa5454;
+    margin: 0;
+    color: #fa5454;
     font-family: 'Arvo', serif;
     margin: 10px 2.5% 5px 2.5%;
 }
@@ -208,7 +206,7 @@ input[type=button] {
     padding: 5px;
     margin: 10px 2.5% 50px 2.5%;
     background-color: #fa5454;
-    color:white;
+    color: white;
 }
 
 input[type=button]:hover {
@@ -216,7 +214,7 @@ input[type=button]:hover {
 }
 
 .contact-flex {
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -231,7 +229,7 @@ input[type=button]:hover {
     width: 500px;
     background-image: url("../images/imagen-contacto.jpg");
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size: 100%;
     margin-left: 80px;
     margin-top: 50px;
 }
@@ -244,7 +242,7 @@ input[type=button]:hover {
 }
 
 /*Biografia*/
-#biografia-background{
+#biografia-background {
     position: relative;
     bottom: 100px;
     background-image: url(../images/Lanzarote-Timamfaya-road_2.jpg);
@@ -258,14 +256,14 @@ input[type=button]:hover {
 
 .biografia-text-container {
     position: relative;
-    bottom:120px;
-    background-color: #F5EDDC;    
+    bottom: 120px;
+    background-color: #F5EDDC;
 }
 
 .biografia-text-container2 {
     position: relative;
     bottom: 165px;
-    background-color: #F5EDDC;   
+    background-color: #F5EDDC;
 }
 
 
@@ -276,7 +274,7 @@ article p {
 }
 
 article p:last-child {
-   padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 article h3 {
@@ -287,22 +285,22 @@ article h3 {
 
 }
 
-p > span {
+p>span {
     font-size: larger;
     font-weight: bold;
 }
 
 #biografia-title {
- position: relative;
- top:470px;
- color: white;
- font-weight: lighter;
- font-size: 35px;
- margin-left: 15%;
- margin-top: 5%;
- width:fit-content;
- border: solid white 2px;
- padding: 10px;
+    position: relative;
+    top: 470px;
+    color: white;
+    font-weight: lighter;
+    font-size: 35px;
+    margin-left: 15%;
+    margin-top: 5%;
+    width: fit-content;
+    border: solid white 2px;
+    padding: 10px;
 }
 
 #biografia-image1 {
@@ -318,13 +316,13 @@ p > span {
     background-size: cover;
     height: 850px;
     position: relative;
-    bottom:100px;
+    bottom: 100px;
 }
 
 #portfolio-footer {
-position: relative;
-top: 800px;
-padding-bottom: 50px;
+    position: relative;
+    top: 800px;
+    padding-bottom: 50px;
 }
 
 #portfolio-tile-container {
@@ -333,7 +331,7 @@ padding-bottom: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     width: 100%;
     background-color: #F5EDDC;
     padding-bottom: 100px;
@@ -382,7 +380,8 @@ p.tile-text:hover {
 }
 
 .tile1:hover {
-    background-image: none;}
+    background-image: none;
+}
 
 .tile2 {
     background-image: url("../images/Logo-Grecia.png");
@@ -391,9 +390,10 @@ p.tile-text:hover {
     background-position: center;
     transition: 0.5s linear;
 }
-    
+
 .tile2:hover {
-    background-image: none;}
+    background-image: none;
+}
 
 .tile3 {
     background-image: url("../images/Scotland-kit-logo.jpg");
@@ -401,10 +401,11 @@ p.tile-text:hover {
     background-repeat: no-repeat;
     background-position: center;
     transition: 0.5s linear;
-    }
-        
+}
+
 .tile3:hover {
-    background-image: none;}
+    background-image: none;
+}
 
 .tile4 {
     background-image: url("../images/Logotipo_del_Instituto_Cervantes.svg.png");
@@ -413,9 +414,10 @@ p.tile-text:hover {
     background-position: center;
     transition: 0.5s linear;
 }
-        
+
 .tile4:hover {
-    background-image: none;}
+    background-image: none;
+}
 
 .tile5 {
     background-image: url("../images/logotipo\ SALT.png");
@@ -424,9 +426,10 @@ p.tile-text:hover {
     background-position: center;
     transition: 0.5s linear;
 }
-                
+
 .tile5:hover {
-    background-image: none;}
+    background-image: none;
+}
 
 .tile6 {
     background-image: url("../images/logo-university-edinburgh.png");
@@ -435,6 +438,7 @@ p.tile-text:hover {
     background-position: center;
     transition: 0.5s linear;
 }
-                    
+
 .tile6:hover {
-    background-image: none;}
+    background-image: none;
+}
