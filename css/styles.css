@@ -42,16 +42,18 @@ strong {
 
 /* nav-bar */
 nav a {
-    color:#F5EDDC;
-    transition: 0.5s linear;
+    color:#fcdc97;
+    transition: 0.3s linear;
     padding: 5px 10px 5px;
     font-size: 1.2em;
-    background-color: rgb(0, 0, 0, 0.2);
+    text-decoration:none;
 }
 
 nav a:hover {
-    color:#ff5656;
+    color:#ffffff;
     font-size: 1.1em;
+    /*text-decoration: underline;*/
+    border: solid white 2px;
 }
 
 nav {
@@ -59,7 +61,8 @@ nav {
     top: 5%;
     right: 5%;
     text-align: right;
-
+    /*background-color: rgb(0, 0, 0, 0.4);*/
+    padding: 5px 10px 5px;
     
 }
 
@@ -282,6 +285,11 @@ article h3 {
     margin: 20px auto 20px;
     padding: 100px 20% 0 20%;
 
+}
+
+p > span {
+    font-size: larger;
+    font-weight: bold;
 }
 
 #biografia-title {
